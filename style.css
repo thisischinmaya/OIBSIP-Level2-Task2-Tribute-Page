@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #fff;
+}
+
+:root {
+    --bg-color: #1f242d;
+    --second-bg-color: #323946;
+    --text-color: #fff;
+    --main-color: #0ef;
+}
+
+span {
+    color: var(--main-color);
+}
+
+body {
+    background: var(--bg-color);
+    color: var(--text-color);
+    /* border: 1rem solid black; */
+}
+
+/* Head */
+.head h1,
+h3 {
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.head h1 {
+    font-size: 4rem;
+}
+
+
+/* Home */
+.main_header {
+    margin-top: 1rem;
+    padding: 1rem;
+    margin-bottom: 2rem;
+}
+
+.container_image figure img {
+    display: block;
+    height: 70vh;
+    width: 70vh;
+    border-radius: 35%;
+    margin: 10px auto;
+}
+
+.container_content {
+    padding-bottom: 1rem;
+}
+
+.container_content h2 {
+    margin-top: 3.5rem;
+    font-size: 2.8rem;
+}
+
+.container_content p {
+    font-size: 1.3rem;
+}
+
+.btn {
+    display: inline-block;
+    padding: .6rem 1.4rem;
+    background: var(--main-color);
+    border-radius: 4rem;
+    box-shadow: 0 0 12px var(--main-color);
+    font-size: 15px;
+    color: black;
+    font-weight: 700;
+
+}
+
+.btn:hover {
+    box-shadow: none;
+    background: var(--main-color);
+    color: #1f242d;
+}
+
+.div-button a {
+    margin: .4rem .5rem .7rem 0;
+    
+}
+
+/* BioGraphy */
+
+.Bio {
+    background: var(--second-bg-color);
+
+}
+
+.Bio-container {
+    max-width: 800px;
+    width: 100%;
+    padding: 2rem 1rem;
+    margin: 1rem auto;
+}
+
+.Bio-container h1 {
+    font-size: 3.3rem;
+}
+
+.Bio-container p {
+    font-size: 1.2rem;
+}
+
+
+/* Photos */
+
+.photo {
+    margin: 2rem auto;
+}
+
+.photo h1 {
+    text-align: center;
+    margin: 1.2rem 0;
+}
+
+.photos-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, MinMax(315px, 1fr));
+    grid-template-rows: repeat(2 3fr);
+    grid-gap: 1rem;
+    margin: 12px;
+}
+
+.photos-box {
+    /* border: 2px solid red; */
+    position: relative;
+    border-radius: 2rem;
+    box-shadow: 0 0 1rem var(--bg-color);
+    overflow: hidden;
+    display: flex;
+}
+
+.photos-box:hover {
+    border: 4px solid var(--main-color);
+
+}
+
+.photos-box img {
+    height: 100%;
+    width: 100%;
+    transition: .5s ease;
+
+}
+
+.photos-box:hover img {
+    transform: scale(1.1);
+}
+
+/* Media Query */
+@media (max-width:430px) {
+    .container_image figure img {
+        height: 50vh;
+        width: 50vh;
+        max-width: 100%;
+    }
+
+}
